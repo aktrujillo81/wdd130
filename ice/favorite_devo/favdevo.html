@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Devotionals</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-image">
+        <h1>My Favorite<br>Devotionals</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content-box">
+        <table class = "devotional-table">
+          <thead>
+            <tr>
+              <th>Speaker</th>
+              <th>Title</th>
+              <th>Location</th>
+              <th>Year</th>
+            </tr>
+            <tbody>
+              <tr>
+                <td>President Alvin F. Meredith III</td>
+                <td>The Mission of BYU-Idaho</td>
+                <td>Rexburg, ID</td>
+                <td>2026</td>
+              </tr>
+              <tr>
+                <td>Elder James O. Fantone</td>
+                <td>The Battle Is the Lord's</td>
+                <td>Rexburg, ID</td>
+                <td>2026</td>
+              </tr>
+              <tr>
+                <td>Dallin H. Oaks</td>
+                <td>Coming Closer to Jesus Christ</td>
+                <td>Provo, UT</td>
+                <td>2026</td>
+              </tr>
+            </tbody>
+          </thead>
+        </table>
+        <form class = "devotional-form">
+          
+          <h2>Add Another Devotional</h2>
+
+
+          <label for = "speaker">Speaker</label>
+          <input type = "text" id = "speaker" name = "speaker" placeholder = "Speaker's name"><br>
+
+          <label for ="title">Title</label>
+          <input type = "text" id = "title" name = "title" placeholder = "Devotional Title"><br>
+
+          <label for="location">Location</label>
+          <input type="text" id="location" name="location" placeholder="Where was it given?"><br>
+
+          <label for="year">Year</label>
+          <input type="number" id="year" name="year" placeholder="e.g. 2019"><br>
+
+          <button type = "submit">Add Devotional</button>
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

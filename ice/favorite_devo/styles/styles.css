@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #d3d3d3, #001f3f);
+  background-repeat: no-repeat; /* Just in case */
+  background-attachment: fixed;
+}
+
+.container {
+  text-align: center;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.header-image {
+  background-image: url('../images/icenter.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+
+}
+
+.header-image h1 {
+  margin: 0;
+  line-height: 0.9;
+    font-size: 3.5em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background: #00000055;
+}
+
+.content-box {
+  background-color: white;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 900px;
+  padding: 40px;
+  box-shadow: 5px 5px 0px black;
+  min-height: 400px;
+}
+
+.devotional-table {
+  width: 100%;
+  margin-bottom: 40px;
+  font-size: 1rem;
+}
+
+.devotional-table th, .devotional-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border: 1px solid #001f3f;
+}
+
+.devotional-table th {
+  background-color: #001f3f;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.devotional-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: f2f2f2;
+  border: 2px solid #001f3f;
+  text-align: left;
+}
+
+.devotional-form h2 {
+  margin: 0 0 10px 0;
+  color: #001f3f;
+  text-align: center;
+}
+
+.devotional-form label {
+  font-weight: bold;
+  color: #001f3f;
+}
+
+.devotional-form input {
+  padding: 10px;
+  border: 2px solid #001f3f;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.devotional-form button {
+  margin-top: 14px;
+  padding: 12px;
+  background-color: #001f3f;
+  color: white;
+  border: 2px solid #001f3f;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.devotional-form button:hover {
+  background-color: white;
+  color: #001f3f;
+}
