@@ -1,0 +1,70 @@
+@import url(https://fonts.googleapis.com/css2?family=Creepster&family=Emilys+Candy&display=swap);
+
+body {
+    background-color: #323031;
+    color: #D93A34;
+    font-family: 'Emilys Candy', Georgia, serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    color: #FF9100;
+    text-shadow: 2px 2px 8px #9A4D95;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    padding: 15px 25px;
+    color: #FFBD17;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+nav li:hover {
+    background-color: #FF9100;
+    color: #323031;
+}
+
+h1, h2 {
+    font-family: 'Creepster', Georgia, sans-serif;
+    letter-spacing: 2px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 0 12px 2px rgba(199, 214, 109, 0.6);
+    width: 500px;
+    border: 6px solid rgba(199, 214, 109, 1);
+    animation: pulse 1.5s ease-in-out infinite alternate;
+    box-sizing: border-box;
+}
+
+section {
+    max-width: 500px;
+    margin: auto;
+}
+
+@keyframes pulse {
+  from {
+    border-color: rgba(199, 214, 109, 1);
+    box-shadow: 0 0 12px 2px rgba(199, 214, 109, 0.6);
+  }
+  to {
+    border-color: rgba(199, 214, 109, 0);
+    box-shadow: 0 0 12px 2px rgba(199, 214, 109, 0);
+  }
+}
