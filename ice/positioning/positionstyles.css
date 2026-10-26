@@ -161,7 +161,7 @@ grid-column-gap: 80px;
 } 
 .green6 {
   width: 200px; 
-  height: 400px; 
+  height: 200px; 
   background-color: green;
   grid-column: 1 / 3;
   grid-row: 5 / 7;
