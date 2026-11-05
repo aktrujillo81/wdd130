@@ -55,7 +55,7 @@ nav {
 
 nav ul {
     display: flex;
-    gap: 24px;
+    gap: 12px;
 }
 
 .button {
@@ -112,14 +112,6 @@ nav ul {
     margin-bottom: 24px;
 }
 
-.features li img {
-    width: 40px;
-    height: 40px;
-    padding: 8px;
-    background-color: #BDC8D0;
-    border-radius: 4px;
-}
-
 .gallery {
     padding: 64px 32px;
     background-color: #E0E2E7;
@@ -144,6 +136,7 @@ nav ul {
     aspect-ratio: 3 / 2;
     object-fit: cover;
     border-radius: 4px;
+    transition: transform 0.3s, opacity 0.3s;
 }
 
 footer {
@@ -174,4 +167,193 @@ footer a:hover {
 nav a{
     color: #f2f2f4;
     text-decoration: none;
+}
+
+.ice-page {
+    padding: 64px 32px;
+}
+
+.ice-page h1 {
+    text-align: center;
+    margin-bottom: 16px;
+    background-image: url("../images/blue_banner.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #F2F2F4;
+    padding: 24px;
+    border-radius: 4px;
+    text-shadow: 2px 2px 4px #323A47;
+}
+
+.ice-page > p {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.ice-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.ice-list article {
+    padding: 24px;
+    background-color: #E0E2E7;
+    border-radius: 4px;
+}
+
+.ice-list h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.ice-list p {
+    margin-bottom: 16px;
+}
+
+.about-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 64px 32px;
+}
+
+.about-page h1 {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.about-page section {
+    margin-bottom: 48px;
+}
+
+.about-page h2 {
+    margin-bottom: 16px;
+}
+
+.about-page section > img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 24px;
+    border-radius: 4px;
+}
+
+.about-page ul {
+    list-style: disc;
+    padding-left: 24px;
+}
+
+.about-page li {
+    margin-bottom: 8px;
+}
+
+.about-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    background-color: #E0E2E7;
+    border-radius: 4px;
+}
+
+.about-page label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.about-page input, .about-page textarea {
+    width: 100%;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 18px;
+    border: 2px solid #BDC8D0;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.about-page input:focus, .about-page textarea:focus {
+    outline: none;
+    border-color: #6875A2;
+}
+
+.about-page button {
+    align-self: flex-start;
+    padding: 10px 24px;
+    background-color: #6875A2;
+    color: #ffffff;
+    border: 2px solid #6875A2;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.about-page button:hover {
+    background-color: #323A47;
+    border-color: #323A47;
+}
+
+.about-page textarea {
+    min-height: 200px;
+    resize: vertical;
+}
+
+.ice-table {
+    max-width: 1000px;
+    margin: 48px auto 0;
+}
+
+.ice-table h2 {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.ice-table table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #E0E2E7;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.ice-table th {
+    padding: 12px 16px;
+    background-color: #323A47;
+    color: #F2F2F4;
+    text-align: left;
+    font-family: inherit;
+}
+
+.ice-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #BDC8D0;
+}
+
+.social {
+    display: flex;
+    gap: 16px;
+}
+
+header nav a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #6875A2;
+    border-radius: 4px;
+}
+
+header nav a:hover {
+    background-color: #BDC8D0;
+    color: #323A47;
+}
+
+.gallery a {
+    display: block;
+}
+
+.gallery a:hover img {
+    transform: scale(1.05);
+    opacity: 0.85;
 }
